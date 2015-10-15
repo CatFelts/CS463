@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "This is the beginning of my script before the function."
+
+function  myFunc
+{
+	echo "Hello $LOGNAME, have fun computing!"
+	return
+}
+
+myFunc 

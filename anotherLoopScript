@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# everthing inbetween the parans are replaced by whatever is returned by that command
+
+for i in $(seq 1 10)
+do 
+	echo $i
+done

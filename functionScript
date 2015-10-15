@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# this script contains an example of defining and using a function in a shell script
+
+echo "This is not my function."
+
+function myFunction {
+	echo "this is my function."
+	echo "$1<--- this is my first argument."
+	echo "$2<--- this is my second argument."
+	echo "$#<--- this is the total number of arguments."
+}
+
+myFunction cat dog
+
+

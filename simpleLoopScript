@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# This is a simple example of a shell scrip using a loop
+
+for i in a b c
+do
+	echo $i
+done

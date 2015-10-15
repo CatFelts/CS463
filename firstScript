@@ -1,0 +1,8 @@
+#! /bin/bash
+
+# everthing on this line is commented out
+
+# this is my first simple shell script
+
+echo "Hello World!"
+

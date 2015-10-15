@@ -1,0 +1,11 @@
+#! /bin/bash
+
+# this is a script testing to see if i can use the 'source' command to bring multiple files into scope
+
+function foo {
+	echo "This is my foo function."
+}
+
+source functionScript
+
+# turns out you totally can!!! (:
