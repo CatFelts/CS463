@@ -3,8 +3,23 @@ echo "This is the beginning of my script before the function."
 
 function  myFunc
 {
-	echo "Hello $LOGNAME, have fun computing!"
+	n1=$1
+	op=$2
+	n2=$3
+	ans=0
+	if [ $# -eq 3 ]; then 
+		ans=$(( $n1 $op $n2))
+		echo "$n1 $op $n2 = $ans"
+		return $ans
+	else 
+		echo "This function requires exactly 3 arguments."
+	fi 
 	return
 }
 
-myFunc 
+myFunc 5 + 10
+echo $?
+myFunc 10 - 2
+echo $? 
+myFunc 10 / 2
+echo $?
